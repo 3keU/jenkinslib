@@ -30,7 +30,7 @@ pipeline{
             steps{
                 script{
                     println("运行构建")
-                    tools.PrintMes(" this is my libs")
+                    tools.PrintMes("this is my libs",'red')
                 }
             }
         }
