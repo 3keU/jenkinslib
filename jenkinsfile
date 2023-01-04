@@ -2,7 +2,11 @@
 @Library('jenkinslib') _     //共享库的名字
 
 def tools = new org.devops.tools()  //共享库中的src/devops/tools.groovy文件
-
+def build = new org.devops.build()
+String buildType = "${env.buildType}"
+String buildShell = "${env.buildShell}"
+println("${buildType}"
+        
 pipeline{
     //指定运行此流水线的节点
     agent  any 
