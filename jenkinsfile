@@ -40,7 +40,7 @@ pipeline{
             }
         }
     }
-    post {
+   /* post {
         always{
             script{
                 println("流水线结束后，经常做的事情")
@@ -65,5 +65,5 @@ pipeline{
             }
         
         }
-    }
+    }*/
 }
