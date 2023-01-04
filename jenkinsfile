@@ -5,6 +5,8 @@ def tools = new org.devops.tools()  //共享库中的src/devops/tools.groovy文�
 def build = new org.devops.build()
 String buildType = "${env.buildType}"
 String buildShell = "${env.buildShell}"
+String srcUrl = "${env.srcUrl}"
+String branchName = "${env.branchName}"
         
 pipeline{
     //指定运行此流水线的节点
