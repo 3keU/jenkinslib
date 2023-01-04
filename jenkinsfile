@@ -34,7 +34,7 @@ pipeline{
                 }
             }
         }
-        stage("Build"){
+        /*stage("Build"){
             steps{
                 script{
                     println("运行构建")
@@ -43,7 +43,7 @@ pipeline{
                         
                 }
             }
-        }
+        }*/
     }
    /* post {
         always{
