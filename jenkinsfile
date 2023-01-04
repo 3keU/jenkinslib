@@ -28,9 +28,9 @@ pipeline{
                     /*println("获取代码")
                     mvnHome = tool "m3.8"
                     println(mvnHome)*/
-                    checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], 
+                        checkout([$class: 'GitSCM', branches: [[name: "${branchName}"]], extensions: [], 
                               userRemoteConfigs: [[credentialsId: '65d73398-af2d-4c5c-afbf-230de1bf158f',                                                                 
-                                                   url: 'git@github.com:3keU/jenkinslib.git']]])
+                                                   url: "${srcUrl}"]]])
                 }
             }
         }
